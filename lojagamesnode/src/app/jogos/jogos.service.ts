@@ -37,6 +37,6 @@ export class JogosService {
   ): Observable<Jogo> {
     const body = { gameName, category, stock, description, price };
     console.log(body);
-    return this.http.post<Jogo>(`http://localhost:3000/api/game/create`, body);
+    return this.http.post<Jogo>(`${API}/api/game/create`, body);
   }
 }

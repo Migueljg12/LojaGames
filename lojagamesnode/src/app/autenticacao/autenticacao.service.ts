@@ -17,6 +17,7 @@ export class AutenticacaoService {
   ) {}
 
   autenticar(email: string, senha: string): Observable<HttpResponse<any>> {
+    console.log(API);
     return this.http
       .post(
         `${API}/api/auth/signin`,
